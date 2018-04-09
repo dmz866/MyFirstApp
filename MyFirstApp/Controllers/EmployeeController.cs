@@ -8,11 +8,16 @@ namespace MyFirstApp.Controllers
 {
     public class EmployeeController : Controller
     {
-        //public IActionResult Index()
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        /* 
         public string Index()
         {
-            //return View();
             return "String is from MVC Controller";
         }
+        */
     }
 }
