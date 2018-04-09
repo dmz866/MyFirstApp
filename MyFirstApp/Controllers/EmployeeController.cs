@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using MyFirstApp.Models;
 
 namespace MyFirstApp.Controllers
 {
@@ -10,7 +11,8 @@ namespace MyFirstApp.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            var employee = new Employee() { EmployeeID = 1, EmployeeName = "David Murillo" };
+            return View(employee);
         }
 
         /* 
